@@ -1,0 +1,147 @@
+/* Increase left panel width */
+
+.g-left {
+  width: 270px;
+}
+
+.g-center {
+  left: 270px;
+}
+
+
+/* Increase drag-n-drop task icon size */
+
+.g-right .empty-detail-wrapper .empty-detail-view {
+  padding: 0 20px;
+}
+
+.task .l-task {
+  padding-left: 36px;
+}
+
+.task .drag {
+  border-radius: 0 18px 18px 0;
+  left: 0;
+  padding: 0 12px;
+  transition: background 0.25s;
+}
+
+
+/* Fill in priority based task checkboxes */
+
+.c-task.priority-high .icon-checkbox, .c-task.priority-high .icon-real-subtask, .c-task.priority-high .icon-subtask, .r-task.priority-high .icon-checkbox, .r-task.priority-high .icon-real-subtask, .r-task.priority-high .icon-subtask, .task.priority-high .icon-checkbox, .task.priority-high .icon-real-subtask, .task.priority-high .icon-subtask, .td-header.priority-high .icon-checkbox, .td-header.priority-high .icon-real-subtask, .td-header.priority-high .icon-subtask {
+  background: #ffcadf;
+}
+
+.c-task.priority-medium .icon-checkbox, .c-task.priority-medium .icon-real-subtask, .c-task.priority-medium .icon-subtask, .r-task.priority-medium .icon-checkbox, .r-task.priority-medium .icon-real-subtask, .r-task.priority-medium .icon-subtask, .task.priority-medium .icon-checkbox, .task.priority-medium .icon-real-subtask, .task.priority-medium .icon-subtask, .td-header.priority-medium .icon-checkbox, .td-header.priority-medium .icon-real-subtask, .td-header.priority-medium .icon-subtask {
+  background: #ffedb2;
+}
+
+.c-task.priority-low .icon-checkbox, .c-task.priority-low .icon-real-subtask, .c-task.priority-low .icon-subtask, .r-task.priority-low .icon-checkbox, .r-task.priority-low .icon-real-subtask, .r-task.priority-low .icon-subtask, .task.priority-low .icon-checkbox, .task.priority-low .icon-real-subtask, .task.priority-low .icon-subtask, .td-header.priority-low .icon-checkbox, .td-header.priority-low .icon-real-subtask, .td-header.priority-low .icon-subtask {
+  background: #c8cee2;
+}
+
+
+/* Order task details properly */
+
+.task .tips {
+  display: flex;
+}
+
+.task .tips .t-date {
+  order: 0;
+}
+
+.task .tips .assignment,
+.task .tips .project-hint {
+  order: 1;
+}
+
+.task .tips .hints.has-show-icon {
+  order: 0;
+}
+
+.task .tips .project-hint .project-name {
+  max-width: none;
+}
+
+
+/* Recolor dark theme */
+
+.dark-theme .g-center {
+  background-color: #e7e9ef;
+}
+
+.dark-theme .g-right {
+  background-color: #313643;
+  border-color: #b3b8c7;
+}
+
+.dark-theme .td-header,
+.dark-theme .td-footer {
+  background-color: #313643;
+}
+
+.dark-theme .g-right .empty-detail-wrapper .empty-detail-view {
+  color: rgba(255,255,255,0.34);
+}
+
+.dark-theme div.task-input {
+  background: #fff;
+}
+
+.dark-theme .input-placeholder {
+  z-index: 0;
+}
+
+.dark-theme ul.task-list {
+  background: rgba(255,255,255,0.7);
+}
+
+.dark-theme .task:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+.dark-theme .task.active,
+.dark-theme .task.selected:hover {
+  background: rgba(0,0,0,0.1);
+}
+
+.dark-theme .td-body,
+.dark-theme .td-body textarea {
+  background-color: #313643;
+  color: rgba(255,255,255,0.9);
+}
+
+.dark-theme .task-detail .i-4,
+.dark-theme .task-detail .i-4-1,
+.dark-theme .task-detail .i-5,
+.dark-theme .task-detail .i-2,
+.dark-theme .task-detail .i-2-1,
+.dark-theme .task-detail .multi-title,
+.dark-theme .td-footer .text-def,
+.dark-theme .td-footer .text-primary {
+  color: rgba(255,255,255,0.9);
+  fill: rgba(255,255,255,0.9);
+}
+
+.dark-theme .td-body .link-views {
+  color: rgba(255,255,255,0.9);
+}
+
+.dark-theme .td-body .link-views::placeholder,
+.dark-theme .td-body .task-title .input-placeholder,
+.dark-theme .td-body .td-content .input-placeholder,
+.dark-theme .td-body .td-sub-desc .input-placeholder,
+.dark-theme .sub-task.checked .title {
+  color: rgba(255,255,255,0.3);
+}
+
+
+/* Inbox */
+
+.sub-task .title.editor-with-link,
+.sub-task .title~.input-placeholder {
+  line-height: 22px;
+  padding: 8px 0;
+}

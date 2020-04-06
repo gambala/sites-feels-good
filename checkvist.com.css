@@ -1,0 +1,320 @@
+/* Minimal font-size */
+
+ul.topLevel ul li.task,
+.text_input {
+  font-size: 13px;
+}
+
+
+
+/* Hide form buttons */
+
+.singleLineForm button.submit,
+.singleLineForm a.editor_cancel {
+  display: none;
+}
+
+i.editHelp {
+  display: none;
+}
+
+
+
+/* Decrease task right margin */
+
+div.coreDiv {
+  margin-right: 30px;
+}
+
+
+
+/* Wide form */
+
+.textareaWrapper {
+  min-width: 80%;
+}
+
+#task_content,
+.text_input {
+  width: 100%;
+}
+
+
+
+/* Maximum workarea height */
+
+body {
+  padding-bottom: 0;
+}
+
+#tasks_block {
+  margin-bottom: 0;
+}
+
+
+
+/* Special colors for tasks */
+
+.color_fg1, span.fg1 .userContent, span.fg1 .userContent a, span.fg1 .userContent a:visited {
+  color: #ec4a21;
+}
+
+.color_fg2, span.fg2 .userContent, span.fg2 .userContent a, span.fg2 .userContent a:visited {
+  color: #999;
+}
+
+.color_fg3, span.fg3 .userContent, span.fg3 .userContent a, span.fg3 .userContent a:visited {
+  color: #cfcfcf;
+}
+
+span.bg3 {
+  background: #f3f3f3;
+  color: #777;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  margin-top: -4px;
+  margin-bottom: -3px;
+}
+
+.selectedTask .bgMarker.bg3 {
+  padding: 0;
+  margin: 3px;
+}
+
+.pageFooter__inner {
+  padding: 3px 10px;
+}
+
+.pageFooter__secondLine {
+  display: none;
+}
+
+.tag {
+  font-size: 10px;
+}
+
+.tagClass_0, a.tagClass_0 {
+  background-color: #f7f7f7;
+  border: 1px solid #f7f7f7;
+  color: #75b2ec;
+}
+
+
+
+/* Special colors for toolbar */
+
+.topbarDiv {
+  background: #e7e9ef;
+  overflow: auto;
+}
+
+.toolbarDiv,
+.toolBar {
+  background: #e7e9ef;
+}
+
+.toolBar span.bordered {
+  display: none;
+}
+
+html, body, .main_div {
+  background: #f8f8fa;
+}
+
+#ffContainer,
+#ffContainer input {
+  background: #f8f8fa;
+}
+
+.topbar {
+  margin: 20px 0 10px;
+}
+
+
+
+/* Align node tags by right */
+
+.editable, .editableList {
+  align-items: baseline;
+  display: flex;
+}
+
+span.node_text {
+  flex-grow: 1;
+}
+
+
+
+/* Make comments flex too */
+
+.editable.commentText {
+  flex-flow: row wrap;
+}
+
+.editable.commentText hr {
+  border-color: #858891;
+  border-top: none;
+  width: 100%;
+}
+
+.userContent ul, .userContent ol {
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+
+
+/* Hide author avatar in comments. Make comments more compact */
+
+ul.comments {
+  margin-left: 20px;
+}
+
+li.comment {
+  padding: 0;
+}
+
+.authorPic {
+  display: none;
+}
+
+div.coreNote {
+  margin-left: 0;
+  padding: 0;
+}
+
+.afterTask.notesFragment {
+  white-space: nowrap;
+}
+
+
+
+/* Two-three columns display */
+
+.content {
+  max-width: none;
+}
+
+ul.topLevel.alighned {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+ul.topLevel.alighned > li.task {
+  margin-bottom: 48px;
+  max-width: 900px;
+  width: 50%;
+}
+
+@media(min-width: 1440px) {
+  ul.topLevel.alighned > li.task {
+    width: 33.33%;
+  }
+}
+
+
+
+/* Special layout for first and second root nodes */
+
+ul.topLevel.alighned > li.task:nth-child(3) {
+  width: 100%;
+  max-width: none;
+}
+
+@media(min-width: 1440px) {
+  ul.topLevel.alighned > li.task:nth-child(1) > ul.dndUl,
+  ul.topLevel.alighned > li.task:nth-child(2) > ul.dndUl {
+    opacity: 0.6;
+  }
+
+  ul.topLevel.alighned > li.task:nth-child(1),
+  ul.topLevel.alighned > li.task:nth-child(2) {
+    width: 20%;
+    max-width: none;
+  }
+
+  ul.topLevel.alighned > li.task:nth-child(3) {
+    width: 60%;
+  }
+}
+
+
+
+/* Special layout for second root node subnodes */
+
+ul.topLevel.alighned > li.task:nth-child(3) > ul.dndUl {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+ul.topLevel.alighned > li.task:nth-child(3) > ul.dndUl #task_content {
+  width: 100% !important;
+}
+
+ul.topLevel.alighned > li.task:nth-child(3) > ul.dndUl > li.task {
+  margin-bottom: 60px;
+  width: 50%;
+}
+
+@media(min-width: 1440px) {
+  ul.topLevel.alighned > li.task:nth-child(3) > ul.dndUl > li.task {
+    width: 33.33%;
+  }
+}
+
+ul.topLevel.alighned > li.task:nth-child(3) > ul.dndUl > li.task > ul.dndUl {
+  opacity: 0.75;
+}
+
+
+
+/* Layout for rest root tasks */
+
+ul.topLevel.alighned > li.task.hiddenByFilter,
+ul.topLevel.alighned > li.task.hidden {
+  display: none;
+}
+
+ul.topLevel.alighned > li.task > ul.dndUl {
+  padding-left: 0;
+}
+
+ul.topLevel.alighned > li.task > div.coreDiv {
+  background: rgba(0, 0, 0, 0.2);
+  margin-left: -24px;
+  margin-right: 40px;
+  padding-left: 24px;
+}
+
+ul.topLevel.alighned > li.task > div.coreDiv div.nodeImage {
+  display: none;
+}
+
+.toolbarDiv {
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+}
+
+.content {
+  margin-top: -1px;
+}
+
+
+
+/* Wide layout for focused task */
+
+ul.topLevel.alighned.focusActiveTop > li.task:not(.dimmed) {
+  max-width: none;
+  width: 100%
+}
+
+ul.topLevel.alighned.focusActiveTop > li.task:not(.dimmed) > ul.dndUl {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+ul.topLevel.alighned.focusActiveTop > li.task:not(.dimmed) > ul.dndUl > li.task {
+  width: 25%;
+}

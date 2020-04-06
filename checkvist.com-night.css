@@ -1,0 +1,273 @@
+/* https://www.color-hex.com/color-palette/36646 */
+
+html, body, .main_div {
+  background: #4b5162;
+  background: #282A36;
+  background: #3b3d4a;
+  color: #e5e5e5;
+  color: #F8F8F2;
+}
+
+.topbarDiv,
+.toolbarDiv,
+.toolBar {
+  background: #404552;
+  background: #20222b;
+  background: #2f313b;
+}
+
+.toolbarDiv,
+.toolBar {
+  border-bottom: none;
+}
+
+.toolBar {
+  text-shadow: none;
+}
+
+a.topbar__navLink, a.topbar__navLink:visited, a.topbar__navLink:hover, a.topbar__navLink:active,
+.toolBar a,
+.toolBar a.printer, .toolBar a#viewOptionsLink, .toolBar .expandCollapse {
+  color: #fff;
+}
+
+img.logoImg {
+  background: #fff;
+  padding: 5px;
+  margin: -5px;
+  border-radius: 16px;
+}
+
+.list-h1 {
+  text-shadow: none;
+}
+
+div.coreDiv.selectedTask, ul.comments li.comment.selectedTask div.coreNote,
+.selectedTask_focus > div.coreDiv, li.comment.selectedTask_focus div.coreNote, li.upload.selectedTask_focus {
+  background: #5294e21c;
+  border-color: #5294e2;
+}
+
+.color_fg1, span.fg1 .userContent, span.fg1 .userContent a, span.fg1 .userContent a:visited {
+  color: #ffa09e;
+}
+
+.color_fg2, span.fg2 .userContent, span.fg2 .userContent a, span.fg2 .userContent a:visited {
+  color: #a0b7ca;
+}
+
+.color_fg3, span.fg3 .userContent, span.fg3 .userContent a, span.fg3 .userContent a:visited {
+  color: #779bb7;
+  color: #6272A4;
+}
+
+span.bg3 {
+  background: #7c818c;
+  color: #f3f3f3;
+}
+
+.text_input {
+  background: #05263f;
+  border-color: #00080e;
+  color: #fff;
+}
+
+.singleLineForm button.submit, .singleLineForm a.editor_cancel {
+  background: #05263f;
+  border-color: #00080e;
+}
+
+.infoMessage {
+  color: #555;
+}
+
+.userContent a, .userContent a:visited {
+  color: #a8d0ff;
+}
+
+ul.comments {
+  background: #383c4a;
+}
+
+li.comment,
+li.comment:first-of-type {
+  border-color: #3b3d4a;
+}
+
+.userContent strong {
+  color: #fff;
+}
+
+span.fg1 .userContent strong,
+span.fg1 .userContent a strong,
+span.fg1 .userContent a:visited strong {
+  color: #ff8f8d;
+}
+
+span.fg2 .userContent strong,
+span.fg2 .userContent a strong,
+span.fg2 .userContent a:visited strong {
+  color: #b4dcfd;
+}
+
+span.fg3 .userContent strong,
+span.fg3 .userContent a strong,
+span.fg3 .userContent a:visited strong {
+  color: #73b0e0;
+}
+
+span.bg1 .userContent strong,
+span.bg1 .userContent a strong,
+span.bg1 .userContent a:visited strong {
+  color: #9297a2;
+}
+
+.taskContent em {
+  opacity: 0.7;
+}
+
+span.fg1 .userContent.task_closed,
+span.fg2 .userContent.task_closed,
+span.fg3 .userContent.task_closed,
+span.fg1 .userContent.task_closed strong,
+span.fg2 .userContent.task_closed strong,
+span.fg3 .userContent.task_closed strong,
+span.fg1 .userContent.task_closed a strong,
+span.fg2 .userContent.task_closed a strong,
+span.fg3 .userContent.task_closed a strong,
+span.fg1 .userContent.task_closed a:visited strong,
+span.fg2 .userContent.task_closed a:visited strong,
+span.fg3 .userContent.task_closed a:visited strong,
+span.task_closed {
+  color: #7c818c;
+}
+
+span.bg1 .userContent.task_closed,
+span.bg1 .userContent.task_closed strong,
+span.bg1 .userContent.task_closed a strong,
+span.bg1 .userContent.task_closed a:visited strong {
+  color: #6c6e73;
+}
+
+.userContent.task_closed strong {
+  color: #7c818c;
+  font-weight: 400;
+}
+
+/* 2019-02-26 update */
+
+.toolBar {
+  color: #fff;
+}
+
+.verticalGuide,
+.verticalGuide__selected {
+  opacity: 0;
+}
+
+ul.topLevel {
+  padding-left: 20px;
+}
+
+.cl_content,
+.leftColumnNav,
+.kbdShortcuts,
+.kbdShortcuts td {
+  background: #5c616f;
+}
+
+.leftColumnNav ul li,
+.kbdShortcuts td {
+  border-color: #3b3d4a;
+}
+
+.kbdShortcuts {
+  text-shadow: none;
+}
+
+.additionalText, ul.checklists li.list_item, #archivedListSection .checklistName a,
+.progressCounterText,
+.menuPopupList li a, .menuPopupList li a:visited {
+  color: #fff;
+}
+
+.tagClass_0, a.tagClass_0 {
+  background-color: #0980f4;
+  border-color: #0980f4;
+  color: #fff;
+  padding: 1px 6px;
+}
+
+.suggestionBox {
+  color: #444;
+}
+
+div.hrDivider {
+  background: #505050;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+.bg1.editable,
+.bg2.editable,
+.bg3.editable,
+.bg7.editable {
+  text-align: center;
+}
+
+.bg1.editable .taskContent::after,
+.bg2.editable .taskContent::after,
+.bg3.editable .taskContent::after,
+.bg7.editable .taskContent::after {
+  background: #505050;
+  content: '';
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.bg1.editable .taskContent p,
+.bg2.editable .taskContent p,
+.bg3.editable .taskContent p,
+.bg7.editable .taskContent p {
+  background: #3b3d4a;
+  border-radius: 3px;
+  line-height: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.priority_4 .priorityColored,
+.priority_4.priorityColored {
+  background: none;
+  color: #7c818c;
+}
+
+.priority_5 .priorityColored,
+.priority_5.priorityColored {
+  background: none;
+  color: #ff8f8d;
+}
+
+.priority_6 .priorityColored,
+.priority_6.priorityColored {
+  background: none;
+  color: #6c6e73;
+}
+
+.priority_7 .priorityColored,
+.priority_7.priorityColored {
+  background: none;
+  color: #fff;
+}
+
+.priority_9 .priorityColored,
+.priority_9.priorityColored,
+.priority_9 .priorityColored strong{
+  background: none;
+  color: #FFD6A6;
+}

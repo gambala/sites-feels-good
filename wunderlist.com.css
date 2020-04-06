@@ -1,0 +1,33 @@
+html body,
+html #wunderlist-base .input-fake,
+html button {
+  font-family: "Roboto","Arial Unicode MS","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+#wunderlist-base #tasks .tasks-scroll {
+  max-width: 910px;
+}
+
+#wunderlist-base .main-interface.detail-visible #detail {
+  width: 700px;
+}
+
+.sidebarItem,
+.sidebarItem a,
+.sidebarFolder .folder-header {
+  height: 38px;
+}
+
+#wunderlist-base ul {
+  height: auto !important;
+}
+
+.taskItem-titleWrapper {
+  white-space: nowrap;
+}
+
+/* Reorder task badges */
+
+.task-recurring   { order: 0; }
+.taskItem-duedate { order: 1; }
+.taskItem-star    { order: 2; }

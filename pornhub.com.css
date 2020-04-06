@@ -1,0 +1,10 @@
+#age-verification-container,
+#age-verification-wrapper,
+#abAlert,
+#js-abContainterMain {
+  display: none;
+}
+
+html.supportsGridLayout #header.hasAdAlert {
+  grid-template-rows: 60px 40px;
+}

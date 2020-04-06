@@ -1,0 +1,8 @@
+.header-banner.logged-in-public-board-banner {
+  background: none;
+  border-bottom: none;
+}
+
+.window-overlay {
+  transition: opacity 0.05s;
+}

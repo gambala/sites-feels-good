@@ -1,0 +1,17 @@
+body {
+  background: #515258;
+  color: #fff;
+}
+
+select,
+input[type="checkbox"]:not(.slider) {
+  background: #fff;
+}
+
+#header {
+  border-color: #56576c;
+}
+
+.resize-grip {
+  border-color: #7a7f8e;
+}
