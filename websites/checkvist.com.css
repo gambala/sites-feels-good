@@ -22,7 +22,7 @@ i.editHelp {
 
 /* Decrease task right margin */
 
-div.coreDiv {
+.topLevel div.coreDiv {
   margin-right: 30px;
 }
 
@@ -195,21 +195,21 @@ div.coreNote {
   max-width: none;
 }
 
-ul.topLevel.alighned {
+ul.topLevel {
   align-items: flex-start;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
-ul.topLevel.alighned > li.task {
+ul.topLevel > li.task {
   margin-bottom: 48px;
   max-width: 900px;
   width: 50%;
 }
 
 @media(min-width: 1440px) {
-  ul.topLevel.alighned > li.task {
+  ul.topLevel > li.task {
     width: 33.33%;
   }
 }
@@ -218,24 +218,24 @@ ul.topLevel.alighned > li.task {
 
 /* Special layout for first and second root nodes */
 
-ul.topLevel.alighned > li.task:nth-child(3) {
+ul.topLevel > li.task:nth-child(3) {
   width: 100%;
   max-width: none;
 }
 
 @media(min-width: 1440px) {
-  ul.topLevel.alighned > li.task:nth-child(1) > ul.dndUl,
-  ul.topLevel.alighned > li.task:nth-child(2) > ul.dndUl {
+  ul.topLevel > li.task:nth-child(1) > ul.dndUl,
+  ul.topLevel > li.task:nth-child(2) > ul.dndUl {
     opacity: 0.6;
   }
 
-  ul.topLevel.alighned > li.task:nth-child(1),
-  ul.topLevel.alighned > li.task:nth-child(2) {
+  ul.topLevel > li.task:nth-child(1),
+  ul.topLevel > li.task:nth-child(2) {
     width: 20%;
     max-width: none;
   }
 
-  ul.topLevel.alighned > li.task:nth-child(3) {
+  ul.topLevel > li.task:nth-child(3) {
     width: 60%;
   }
 }
@@ -244,27 +244,32 @@ ul.topLevel.alighned > li.task:nth-child(3) {
 
 /* Special layout for second root node subnodes */
 
-ul.topLevel.alighned > li.task:nth-child(3) > ul.dndUl {
+ul.topLevel > li.task:nth-child(3) > ul.dndUl {
   display: flex;
   flex-flow: row wrap;
 }
 
-ul.topLevel.alighned > li.task:nth-child(3) > ul.dndUl #task_content {
+ul.topLevel > li.task:nth-child(3) > ul.dndUl #task_content {
   width: 100% !important;
 }
 
-ul.topLevel.alighned > li.task:nth-child(3) > ul.dndUl > li.task {
-  margin-bottom: 60px;
+ul.topLevel > li.task:nth-child(3) > ul.dndUl > li.task {
+  margin-bottom: 40px;
   width: 50%;
 }
 
+ul.topLevel > li.task:nth-child(3) > ul.dndUl > li.task.dividerClass {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
 @media(min-width: 1440px) {
-  ul.topLevel.alighned > li.task:nth-child(3) > ul.dndUl > li.task {
+  ul.topLevel > li.task:nth-child(3) > ul.dndUl > li.task {
     width: 33.33%;
   }
 }
 
-ul.topLevel.alighned > li.task:nth-child(3) > ul.dndUl > li.task > ul.dndUl {
+ul.topLevel > li.task:nth-child(3) > ul.dndUl > li.task > ul.dndUl {
   opacity: 0.75;
 }
 
@@ -272,23 +277,23 @@ ul.topLevel.alighned > li.task:nth-child(3) > ul.dndUl > li.task > ul.dndUl {
 
 /* Layout for rest root tasks */
 
-ul.topLevel.alighned > li.task.hiddenByFilter,
-ul.topLevel.alighned > li.task.hidden {
+ul.topLevel > li.task.hiddenByFilter,
+ul.topLevel > li.task.hidden {
   display: none;
 }
 
-ul.topLevel.alighned > li.task > ul.dndUl {
+ul.topLevel > li.task > ul.dndUl {
   padding-left: 0;
 }
 
-ul.topLevel.alighned > li.task > div.coreDiv {
+ul.topLevel > li.task > div.coreDiv {
   background: rgba(0, 0, 0, 0.2);
   margin-left: -24px;
   margin-right: 40px;
   padding-left: 24px;
 }
 
-ul.topLevel.alighned > li.task > div.coreDiv div.nodeImage {
+ul.topLevel > li.task > div.coreDiv div.nodeImage {
   display: none;
 }
 
@@ -305,16 +310,27 @@ ul.topLevel.alighned > li.task > div.coreDiv div.nodeImage {
 
 /* Wide layout for focused task */
 
-ul.topLevel.alighned.focusActiveTop > li.task:not(.dimmed) {
+ul.topLevel.focusActiveTop > li.task:not(.dimmed) {
   max-width: none;
   width: 100%
 }
 
-ul.topLevel.alighned.focusActiveTop > li.task:not(.dimmed) > ul.dndUl {
+ul.topLevel.focusActiveTop > li.task:not(.dimmed) > ul.dndUl {
   display: flex;
   flex-flow: row wrap;
 }
 
-ul.topLevel.alighned.focusActiveTop > li.task:not(.dimmed) > ul.dndUl > li.task {
+ul.topLevel.focusActiveTop > li.task:not(.dimmed) > ul.dndUl > li.task {
   width: 25%;
+}
+
+
+
+/* Normally whitespaced links */
+
+.userContent a, .userContent a.toShorten {
+  background-image: none;
+  text-decoration: none;
+  white-space: normal;
+  word-break: break-word;
 }
