@@ -1,19 +1,20 @@
 /* https://www.color-hex.com/color-palette/36646 */
 
 html, body, .main_div {
-  background: #4b5162;
-  background: #282A36;
   background: #3b3d4a;
-  color: #e5e5e5;
+  background: #3F3F46;
+/*   background: #374151; */
   color: #F8F8F2;
+  color: #F4F4F5;
 }
 
 .topbarDiv,
 .toolbarDiv,
 .toolBar {
-  background: #404552;
-  background: #20222b;
   background: #2f313b;
+  background: #27272A;
+/*   background: #1F2937; */
+/*   background: #1E293B; */
 }
 
 .toolbarDiv,
@@ -50,15 +51,17 @@ div.coreDiv.selectedTask, ul.comments li.comment.selectedTask div.coreNote,
 
 .color_fg1, span.fg1 .userContent, span.fg1 .userContent a, span.fg1 .userContent a:visited {
   color: #ffa09e;
+  color: #FCA5A5;
 }
 
 .color_fg2, span.fg2 .userContent, span.fg2 .userContent a, span.fg2 .userContent a:visited {
   color: #a0b7ca;
+  color: #9CA3AF;
 }
 
 .color_fg3, span.fg3 .userContent, span.fg3 .userContent a, span.fg3 .userContent a:visited {
   color: #779bb7;
-  color: #6272A4;
+  color: #6B7280;
 }
 
 span.bg3 {
@@ -102,6 +105,7 @@ span.fg1 .userContent strong,
 span.fg1 .userContent a strong,
 span.fg1 .userContent a:visited strong {
   color: #ff8f8d;
+  color: #FCA5A5;
 }
 
 span.fg2 .userContent strong,
@@ -140,6 +144,10 @@ span.fg2 .userContent.task_closed a:visited strong,
 span.fg3 .userContent.task_closed a:visited strong,
 span.task_closed {
   color: #7c818c;
+}
+
+span.task_closed strong {
+  color: #7c818c !important;
 }
 
 span.bg1 .userContent.task_closed,
@@ -251,6 +259,7 @@ div.hrDivider {
 .priority_5.priorityColored {
   background: none;
   color: #ff8f8d;
+  color: #FCA5A5;
 }
 
 .priority_6 .priorityColored,
@@ -265,9 +274,32 @@ div.hrDivider {
   color: #fff;
 }
 
+.priority_8 .priorityColored,
+.priority_8.priorityColored,
+.priority_8 .priorityColored strong{
+  background: none;
+  color: #E7BEFF;
+  color: #F9A8D4;
+}
+
 .priority_9 .priorityColored,
 .priority_9.priorityColored,
 .priority_9 .priorityColored strong{
   background: none;
   color: #FFD6A6;
+  color: #FDBA74;
 }
+
+
+
+.highlight, .highlightEl, .yesNo {
+  background-color: #4d5775;
+}
+
+
+.userContent ul,
+.userContent ol {
+  margin-left: 15px;
+}
+
+
