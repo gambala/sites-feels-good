@@ -1,0 +1,19 @@
+/* Highlight "Follows you" label with red */
+
+.r-aaos50 {
+  background: #742525;
+}
+
+
+
+/* Place "Mute @someone" menu item first, both in a feed and account page */
+
+.css-1dbjc4n.r-yfoy6g.r-z2wwpe.r-xnswec.r-j2cz3j.r-1udh08x.r-u8s1d > div > .css-1dbjc4n > .css-1dbjc4n > a[href='/i/lists/add_member'] + div {
+  background: #742525;
+  order: -1;
+}
+
+.css-1dbjc4n.r-yfoy6g.r-z2wwpe.r-xnswec.r-j2cz3j.r-1udh08x.r-u8s1d > div > .css-1dbjc4n > .css-1dbjc4n > a[href$='/topics'] + a + a + a + div + div {
+  background: #742525;
+  order: -1;
+}
